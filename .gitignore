@@ -2,3 +2,4 @@ bin
 obj
 *.feature.cs
 .idea
+.vscode

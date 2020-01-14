@@ -8,3 +8,10 @@ Scenario: first scenario
  Given precondition
   When action
   Then testable outcome
+
+
+Scenario: second scenario
+ Given some stuff
+  When some action is performed
+  Then something should happen
+
