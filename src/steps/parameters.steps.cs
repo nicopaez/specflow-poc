@@ -9,21 +9,21 @@ namespace DotnetcoreTutorial.src.steps
   public class ParametersSteps
   {
 
-    string word;
-    int count;
+    string _word;
+    int _count;
       [Given(@"the word '(.*)'")]
       public void GivenPrecondition(string theWord){
-        this.word = theWord;
+        this._word = theWord;
       }
 
       [When(@"i count its size")]
       public void WhenAction(){
-        this.count = word.Length;
+        this._count = _word.Length;
       }
 
      [Then(@"i get (.*)")]
       public void ThenTestableOutcome(int expectedResult){
-          Assert.AreEqual(expectedResult, this.count);
+          Assert.AreEqual(expectedResult, this._count);
       }
   }
 
